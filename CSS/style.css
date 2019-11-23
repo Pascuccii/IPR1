@@ -1,0 +1,167 @@
+body {
+	background-color: red;
+    /*background-image: url(../RESOURCE/fon.jpg);*/
+    background-size: cover;
+}
+
+.transparent { /*класс для фона ячейки*/
+    opacity: 0.6;
+}
+
+.text {
+    display: block;
+    position: absolute;
+    width: 40%;
+    top: 120px;
+    left: 50px;
+    column-count: 2;
+    column-rule: 3px solid #64ff97;
+    background-origin: content-box;
+}
+
+.text1 {
+    color: #0E0D0D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.text2 {
+    color: #e4ff3c;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.text3 {
+    color: #64ff97;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: #c02238 2px 2px 2px;
+}
+
+@keyframes forimg1 {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    33% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+    66% {
+        opacity: 0.5;
+        transform: rotate(0deg)
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+
+}
+
+.img1 {
+    position: absolute;
+    animation: forimg1 5s 1;
+    z-index: 1;
+    opacity: 1;
+}
+
+@keyframes forimg2 {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    33% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+    66% {
+        opacity: 0.5;
+        transform: rotate(0deg)
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+
+}
+
+.img2 {
+    position: absolute;
+    animation: forimg2 5s 1;
+    z-index: 2;
+    opacity: 1;
+}
+
+@keyframes forimg3 {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    33% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+    66% {
+        opacity: 0.5;
+        transform: rotate(0deg)
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+
+}
+
+.img3 {
+    position: absolute;
+    animation: forimg3 5s 1;
+    z-index: 3;
+    opacity: 1;
+}
+
+.img3 span {
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 25px;
+    /* перенос слов */
+    word-wrap: break-word;
+    width: 110px; /* Ширина блока */
+}
+
+@keyframes slideRight {
+    0% {
+        left: 20px;
+        top: 10px;
+    }
+    50% {
+        left: 1376px;
+        top: 10px;
+        background-color: aqua;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 20px;
+        top: 10px;
+    }
+
+}
+
+.imgbird {
+    position: absolute;
+    z-index: 4;
+    left: 15px;
+    top: 20px;
+    animation: slideRight 15s infinite linear;
+    background-color: blue;
+    opacity: 0.3;
+}
+
+
